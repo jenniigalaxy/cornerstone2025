@@ -14,7 +14,6 @@ brand:
 {{/partial}}
 
 {{#partial "page"}}
-{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
 {{#if brand.image}}
     <div class="brand-image-container">
         {{> components/common/responsive-img
@@ -31,7 +30,7 @@ brand:
         {{> components/brand/sidebar}}
     </aside>
 
-    <main class="page-content" id="product-listing-container">
+    <div class="page-content" id="product-listing-container">
         {{#if brand.search_error }}
             <p>{{lang 'search.errorMessage'}}</p>
         {{else}}
@@ -42,8 +41,8 @@ brand:
             {{/if}}
             {{{region name="brand_below_content"}}}
         {{/if}}
-    </main>
+    </div>
 </div>
-
+{{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
 {{/partial}}
 {{> layout/base}}
