@@ -1,10 +1,8 @@
 {{#partial "page"}}
-
     {{inject 'creditCardNumber' (lang 'forms.validate.payment_method.credit_card_number')}}
     {{inject 'expiration' (lang 'forms.validate.payment_method.expiration')}}
     {{inject 'nameOnCard' (lang 'forms.validate.payment_method.name_on_card')}}
     {{inject 'cvv' (lang 'forms.validate.payment_method.cvv')}}
-
     {{inject 'firstNameLabel' (lang 'forms.payment_methods.first_name')}}
     {{inject 'lastNameLabel' (lang 'forms.payment_methods.last_name')}}
     {{inject 'companyLabel' (lang 'forms.payment_methods.company')}}
@@ -16,7 +14,6 @@
     {{inject 'stateLabel' (lang 'forms.payment_methods.state')}}
     {{inject 'postalCodeLabel' (lang 'forms.payment_methods.postal_code')}}
     {{inject 'chooseCountryLabel' (lang 'forms.payment_methods.choose_country')}}
-
     {{inject 'paymentMethodsUrl' urls.account.payment_methods.all}}
     {{inject 'paymentsUrl' settings.payments_url}}
     {{inject 'storeHash' settings.store_hash}}
