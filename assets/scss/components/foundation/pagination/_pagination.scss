@@ -55,6 +55,7 @@
 
         > a {
             color: $pagination-item-previousNext-color;
+            text-transform:uppercase;
 
             &:hover {
                 color: $pagination-item-previousNext-color-hover;
